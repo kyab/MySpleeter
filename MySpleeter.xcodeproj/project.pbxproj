@@ -11,6 +11,13 @@
 		EB716DE724FE543E00ED4FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB716DE624FE543E00ED4FA1 /* Assets.xcassets */; };
 		EB716DEA24FE543E00ED4FA1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB716DE824FE543E00ED4FA1 /* MainMenu.xib */; };
 		EB716DED24FE543E00ED4FA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB716DEC24FE543E00ED4FA1 /* main.m */; };
+		EB716DF624FE54B700ED4FA1 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB716DF524FE54B700ED4FA1 /* AppController.m */; };
+		EB716DF924FE6DC100ED4FA1 /* DragAndDropTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB716DF824FE6DC100ED4FA1 /* DragAndDropTextField.m */; };
+		EB716DFB24FF9ADF00ED4FA1 /* devbuild in Resources */ = {isa = PBXBuildFile; fileRef = EB716DFA24FF9ADF00ED4FA1 /* devbuild */; settings = {ASSET_TAGS = (New, ); }; };
+		EB716DFD24FF9B3300ED4FA1 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB716DFC24FF9B3200ED4FA1 /* ffmpeg */; settings = {ASSET_TAGS = (New, ); }; };
+		EB716DFF24FF9B4100ED4FA1 /* libpython3.7m.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB716DFE24FF9B4100ED4FA1 /* libpython3.7m.a */; };
+		EB716E0224FF9BB600ED4FA1 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB716E0124FF9BB600ED4FA1 /* libiconv.2.dylib */; };
+		EB716E0524FF9D1400ED4FA1 /* SpleeterWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB716E0424FF9D1400ED4FA1 /* SpleeterWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,16 @@
 		EB716DEB24FE543E00ED4FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB716DEC24FE543E00ED4FA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB716DEE24FE543F00ED4FA1 /* MySpleeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySpleeter.entitlements; sourceTree = "<group>"; };
+		EB716DF424FE54B700ED4FA1 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		EB716DF524FE54B700ED4FA1 /* AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		EB716DF724FE6DC100ED4FA1 /* DragAndDropTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndDropTextField.h; sourceTree = "<group>"; };
+		EB716DF824FE6DC100ED4FA1 /* DragAndDropTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndDropTextField.m; sourceTree = "<group>"; };
+		EB716DFA24FF9ADF00ED4FA1 /* devbuild */ = {isa = PBXFileReference; lastKnownFileType = folder; name = devbuild; path = ../devbuild; sourceTree = "<group>"; };
+		EB716DFC24FF9B3200ED4FA1 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ffmpeg; path = ../ffmpeg; sourceTree = "<group>"; };
+		EB716DFE24FF9B4100ED4FA1 /* libpython3.7m.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython3.7m.a; path = ../devbuild/lib/libpython3.7m.a; sourceTree = "<group>"; };
+		EB716E0124FF9BB600ED4FA1 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		EB716E0324FF9D1400ED4FA1 /* SpleeterWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpleeterWrapper.h; sourceTree = "<group>"; };
+		EB716E0424FF9D1400ED4FA1 /* SpleeterWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpleeterWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB716DFF24FF9B4100ED4FA1 /* libpython3.7m.a in Frameworks */,
+				EB716E0224FF9BB600ED4FA1 /* libiconv.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +57,12 @@
 		EB716DD724FE543B00ED4FA1 = {
 			isa = PBXGroup;
 			children = (
+				EB716DFE24FF9B4100ED4FA1 /* libpython3.7m.a */,
+				EB716DFC24FF9B3200ED4FA1 /* ffmpeg */,
+				EB716DFA24FF9ADF00ED4FA1 /* devbuild */,
 				EB716DE224FE543B00ED4FA1 /* MySpleeter */,
 				EB716DE124FE543B00ED4FA1 /* Products */,
+				EB716E0024FF9BB500ED4FA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +77,10 @@
 		EB716DE224FE543B00ED4FA1 /* MySpleeter */ = {
 			isa = PBXGroup;
 			children = (
+				EB716DF424FE54B700ED4FA1 /* AppController.h */,
+				EB716DF524FE54B700ED4FA1 /* AppController.m */,
+				EB716E0324FF9D1400ED4FA1 /* SpleeterWrapper.h */,
+				EB716E0424FF9D1400ED4FA1 /* SpleeterWrapper.m */,
 				EB716DE324FE543B00ED4FA1 /* AppDelegate.h */,
 				EB716DE424FE543B00ED4FA1 /* AppDelegate.m */,
 				EB716DE624FE543E00ED4FA1 /* Assets.xcassets */,
@@ -61,8 +88,18 @@
 				EB716DEB24FE543E00ED4FA1 /* Info.plist */,
 				EB716DEC24FE543E00ED4FA1 /* main.m */,
 				EB716DEE24FE543F00ED4FA1 /* MySpleeter.entitlements */,
+				EB716DF724FE6DC100ED4FA1 /* DragAndDropTextField.h */,
+				EB716DF824FE6DC100ED4FA1 /* DragAndDropTextField.m */,
 			);
 			path = MySpleeter;
+			sourceTree = "<group>";
+		};
+		EB716E0024FF9BB500ED4FA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB716E0124FF9BB600ED4FA1 /* libiconv.2.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +128,9 @@
 		EB716DD824FE543B00ED4FA1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = kyab;
 				TargetAttributes = {
@@ -122,8 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB716DFB24FF9ADF00ED4FA1 /* devbuild in Resources */,
 				EB716DE724FE543E00ED4FA1 /* Assets.xcassets in Resources */,
 				EB716DEA24FE543E00ED4FA1 /* MainMenu.xib in Resources */,
+				EB716DFD24FF9B3300ED4FA1 /* ffmpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB716DF924FE6DC100ED4FA1 /* DragAndDropTextField.m in Sources */,
 				EB716DED24FE543E00ED4FA1 /* main.m in Sources */,
+				EB716DF624FE54B700ED4FA1 /* AppController.m in Sources */,
+				EB716E0524FF9D1400ED4FA1 /* SpleeterWrapper.m in Sources */,
 				EB716DE524FE543B00ED4FA1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +315,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A386R5WFZ6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /Users/koji/work/mypython/devbuild/include/python3.7m;
 				INFOPLIST_FILE = MySpleeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /Users/koji/work/mypython/devbuild/lib;
+				OTHER_LDFLAGS = (
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+					/usr/local/Cellar/gettext/0.21/lib/libintl.a,
+					/usr/local/Cellar/libiconv/1.16/lib/libiconv.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyab.MySpleeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,11 +342,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A386R5WFZ6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /Users/koji/work/mypython/devbuild/include/python3.7m;
 				INFOPLIST_FILE = MySpleeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /Users/koji/work/mypython/devbuild/lib;
+				OTHER_LDFLAGS = (
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+					/usr/local/Cellar/gettext/0.21/lib/libintl.a,
+					/usr/local/Cellar/libiconv/1.16/lib/libiconv.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyab.MySpleeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
