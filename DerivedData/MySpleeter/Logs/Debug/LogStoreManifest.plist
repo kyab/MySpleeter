@@ -5,6 +5,41 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>27C69FD4-5085-4178-9F68-2C0D04962C95</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>27C69FD4-5085-4178-9F68-2C0D04962C95.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MySpleeter project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MySpleeter</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug MySpleeter</string>
+			<key>timeStartedRecording</key>
+			<real>620821423.58752799</real>
+			<key>timeStoppedRecording</key>
+			<real>620821426.40916598</real>
+			<key>title</key>
+			<string>Debug MySpleeter</string>
+			<key>uniqueIdentifier</key>
+			<string>27C69FD4-5085-4178-9F68-2C0D04962C95</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -110,6 +110,11 @@
     NSLog(@"initializing separator...");
     PyObject *pName = PyUnicode_DecodeFSDefault("spleeter.separator");
     PyObject *pModule = PyImport_Import(pName);
+    if(!pModule){
+        NSString *pyErr = [self getPythonError];
+        NSLog(@"%@", pyErr);
+        return;
+    }
     PyObject *pFunc = PyObject_GetAttrString(pModule, "Separator");
     PyObject *pArgs = PyTuple_New(1);
     PyObject *pArg = PyUnicode_DecodeFSDefault("spleeter:5stems");
