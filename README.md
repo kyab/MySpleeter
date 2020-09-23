@@ -46,11 +46,37 @@ make
 make install
 ```
 
+### Install spleeter into self builded python
+Execute following commands to install spleeter in self builded python.
+```
+cd ~/work/devbuild/bin
+export PYTHONPATH="~/work/devbuild/lib/python3.7/site-packages"
+./python3 -m pip install spleeter
+```
+Now your python build(~/work/devbuild) are spleeter installed version.
+
+
 ### Add self builded python into your XCode project
 Drag and drop ~/work/devbuild into left side (project)view of Xcode.
 
 Drag and drop ~/work/devbuild/lib/libpython3.7m.a into leftside (project)view of Xcode.
 
 In XCode, open project's "Build Phases" tab and add "devbuild" to "Copy Bundle Resources" phase.
+
+### Add ffmpeg/ffprobe to your Xcode project
+Download standalone version of ffmpeg/ffprobe binary(executable) from [here](https://evermeet.cx/ffmpeg/).
+
+Create folder named "ffmpeg" in Xcode project and drag and drop ffmpeg/ffprobe binary into left side (project)view of Xcode.
+
+In XCode, open project's "Build Phases" tab and add "devbuild" to "Copy Bundle Resouces" phase.
+
+### Coding(Initializing)
+At first, path to ffmpeg/ffprobe should be in PATH environment value when your application launch.
+See code around https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L23
+
+Next, PYTHONPATH should be set, for embedded python can find spleeter and dependent python libraries.
+See code around https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L32
+
+After that, [Initializing python from C](https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L42) should success.
 
 
