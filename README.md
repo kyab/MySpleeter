@@ -18,11 +18,10 @@ this openssl will be used to static link openssl to self builded python.
 
 ### Self build python3.7 with openssl statically linked.
 
-Download Python3.7.x from [here](https://www.python.org/downloads/source/), then extract it to any place(example : ~/work/python3.7)
-
+Download source code of Python3.7.x from [here](https://www.python.org/downloads/source/), then extract it to any place(example : ~/work/python3.7)
 Python3.8.x does not work with spleeter.
 
-Then, open file named ~/work/python3.7/Modules/Setup with editor, and edit
+Open file named ~/work/python3.7/Modules/Setup with editor, and edit
 ```
 # Socket module helper for SSL support; you must comment out the other
 # socket line above, and possibly edit the SSL variable:
