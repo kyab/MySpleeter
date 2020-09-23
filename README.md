@@ -47,3 +47,10 @@ make install
 ```
 
 ### Add self builded python into your XCode project
+Drag and drop ~/work/devbuild into left side (project)view of Xcode.
+
+Drag and drop ~/work/devbuild/lib/libpython3.7m.a into leftside (project)view of Xcode.
+
+In XCode, open project's "Build Phases" tab and add "devbuild" to "Copy Bundle Resources" phase.
+
+
