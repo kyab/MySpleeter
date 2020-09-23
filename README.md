@@ -8,7 +8,7 @@ https://github.com/kyab/MySpleeter/releases/download/20200904_2/MySpleeter202009
 
 ## Development Documentation
 In this section, I wrote down the way to embed whole spleeter into mac application.
-(I've basically refered [stackoverflow post](https://stackoverflow.com/questions/26660287/how-to-embed-python-in-an-objective-c-os-x-application-for-plugins) as a start point. It describes way to embed python into application.)
+(I've basically refered [stackoverflow post](https://stackoverflow.com/questions/26660287/how-to-embed-python-in-an-objective-c-os-x-application-for-plugins) as a starting point. It describes way to embed python into application.)
 
 ### Install openssl with homebrew
 ```
