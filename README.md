@@ -79,4 +79,11 @@ See code around https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad04104
 
 After that, [Initializing python from C](https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L42) should success.
 
+### Coding(Separation)
+Using Python's C API to call spleeter API that written in Python.
+See code started from here(https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L107), 
+and here(https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L132)
+
+### Building and Test
+If you successfully build, try run your application on fresh installed macOS. It would ensure that can run without any preinstalled modules, if you plan to distribute your app.
 
