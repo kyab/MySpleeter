@@ -2,6 +2,12 @@
 MySpleeter is Mac GUI version of [Spleeter](https://research.deezer.com/projects/spleeter.html).
 MySpleeter allows you to separate any stereo music files into 5stems(vocals/drums/bass/piano/other).
 
+## M1/M2 Mac support
+Currently MySpleeter does not support M1 Mac nor M2 Mac.
+You can check current status on :
+https://github.com/kyab/MySpleeter/issues/8
+
+
 ## download
 https://github.com/kyab/MySpleeter/releases/download/20200904_2/MySpleeter20200904.dmg
 
