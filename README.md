@@ -2,27 +2,36 @@
 MySpleeter is Mac GUI version of [Spleeter](https://research.deezer.com/projects/spleeter.html).
 MySpleeter allows you to separate any stereo music files into 5stems(vocals/drums/bass/piano/other).
 
-## M1/M2 Mac support
-Currently MySpleeter does not support M1 Mac nor M2 Mac.
-You can check current status on :
-https://github.com/kyab/MySpleeter/issues/8
-
-
 ## download
 https://github.com/kyab/MySpleeter/releases/download/20200904_2/MySpleeter20200904.dmg
 
+## ⚠️ M1/M2/M3 Mac is not supported.
+MySpleeter do not work on M1/M2/M3 Mac, and due to technical reason there is no plan to support M1/M2/M3.
 
-## Development Documentation
+Alternatively, I recommend following for music stem separation.
+These both support M1/M2/M2 Mac.
+
+Demucs-GUI: \
+https://github.com/CarlGao4/Demucs-Gui
+
+Ultimate Vocal Remover \
+https://github.com/Anjok07/ultimatevocalremovergui
+
+
+
+
+
+# Development
 In this section, I wrote down the way to embed whole spleeter into mac application.
 (I've basically refered [stackoverflow post](https://stackoverflow.com/questions/26660287/how-to-embed-python-in-an-objective-c-os-x-application-for-plugins) as a starting point. It describes way to embed python into application.)
 
-### Install openssl with homebrew
+## Install openssl with homebrew
 ```
 brew install openssl
 ```
 this openssl will be used to static link openssl to self builded python.
 
-### Self build python3.7 with openssl statically linked.
+## Self build python3.7 with openssl statically linked.
 
 Download source code of Python3.7.x from [here](https://www.python.org/downloads/source/), then extract it to any place(example : ~/work/python3.7)
 Python3.8.x does not work with spleeter.
@@ -52,7 +61,7 @@ make
 make install
 ```
 
-### Install spleeter into self builded python
+## Install spleeter into self builded python
 Execute following commands to install spleeter in self builded python.
 ```
 cd ~/work/devbuild/bin
@@ -62,21 +71,21 @@ export PYTHONPATH="~/work/devbuild/lib/python3.7/site-packages"
 Now your python build(~/work/devbuild) are spleeter installed version.
 
 
-### Add self builded python into your XCode project
+## Add self builded python into your XCode project
 Drag and drop ~/work/devbuild into left side (project)view of Xcode.
 
 Drag and drop ~/work/devbuild/lib/libpython3.7m.a into leftside (project)view of Xcode.
 
 In XCode, open project's "Build Phases" tab and add "devbuild" to "Copy Bundle Resources" phase.
 
-### Add ffmpeg/ffprobe to your Xcode project
+## Add ffmpeg/ffprobe to your Xcode project
 Download standalone version of ffmpeg/ffprobe binary(executable) from [here](https://evermeet.cx/ffmpeg/).
 
 Create folder named "ffmpeg" in Xcode project and drag and drop ffmpeg/ffprobe binary into left side (project)view of Xcode.
 
 In XCode, open project's "Build Phases" tab and add "devbuild" to "Copy Bundle Resouces" phase.
 
-### Coding(Initializing)
+## Coding(Initializing)
 At first, path to ffmpeg/ffprobe should be in PATH environment value when your application launch.
 See code around https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L23
 
@@ -85,11 +94,11 @@ See code around https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad04104
 
 After that, [Initializing python from C](https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L42) should success.
 
-### Coding(Separation)
+## Coding(Separation)
 Using Python's C API to call spleeter API that written in Python.
 See code started from here(https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L107), 
 and here(https://github.com/kyab/MySpleeter/blob/a33ecf73c9d2b8ed6ad041043a72978f6f764ae5/MySpleeter/SpleeterWrapper.m#L132)
 
-### Building and Test
+## Building and Test
 If you successfully build, try run your application on fresh installed macOS. It would ensure that can run without any preinstalled modules, if you plan to distribute your app.
 
